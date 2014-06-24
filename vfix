@@ -1,0 +1,24 @@
+#!/bin/bash
+
+function fix {
+	rec='RECYCLER'
+	if [ -d "$1/$rec" ]; then
+		rm -rf "$1/$rec"
+	elif [ -d "$rec" ]; then
+		rm -rf "$rec"
+	fi
+	is_ntfs=`findmnt -T $1 | grep fuseblk`
+	if [ "$is_ntfs" ]; then
+		find $1 -type d -exec setfattr -h -v 0x00000000 -n system.ntfs_attrib_be {} \;
+	else
+		find $1 -type d -exec fatattr -h -s {} \;
+	fi
+	find $1 -type f -name "*.lnk" -exec rm -f {} \;
+	find $1 -type f -iname "autorun.inf" -exec rm -f {} \;
+}
+
+if [ $1 ]; then
+	fix $1
+else
+	fix ./
+fi
