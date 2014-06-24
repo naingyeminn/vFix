@@ -33,13 +33,13 @@ $ sudo make
 
 ###vFix to Mounted Directory
 ```sh
-vfix /media/your_mounted_drive
+$ vfix /media/your_mounted_drive
 ```
 
 ###vFix to current Directory
 ```sh
-cd /media/your_mounted_drive
-vfix
+$ cd /media/your_mounted_drive
+$ vfix
 ```
 
 ##Troubleshooting
@@ -54,7 +54,7 @@ Problem is you are using vfix on neither NTFS nor FAT32 File System.
 
 - Run following command:
 ```sh
-sudo make uninstall
+$ sudo make uninstall
 ```
 
 ##Review in Burmese
