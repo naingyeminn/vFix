@@ -12,7 +12,7 @@ Autorun.inf and RECYCLER created by Windows Viruses.
 
 ##Installation
 
-- Download vFix zip file and extract it.
+- Download [vFix](https://github.com/naingyeminn/vFix/archive/master.zip) zip file and extract it.
 
 - Change into the extracted directory in Terminal.
 
@@ -47,7 +47,7 @@ Problem is you are using vfix on neither NTFS nor FAT32 File System.
 
 ##Review in Burmese
 
-- [vFix for Windows Viruses](http://naingyeminn.com/)
+- [vFix - Fix Virus Infected Flash Drives](http://naingyeminn.com/)
 
 ##License
 
