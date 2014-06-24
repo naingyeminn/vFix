@@ -12,24 +12,35 @@ Autorun.inf and RECYCLER created by Windows Viruses.
 
 ##Installation
 
-- Download [vFix](https://github.com/naingyeminn/vFix/archive/master.zip) zip file and extract it.
-
+- Download [vFix](https://github.com/naingyeminn/vFix/archive/master.zip) zip file
+```sh
+$ wget https://github.com/naingyeminn/vFix/archive/master.zip -O vFix.zip
+```
+- Extract vFix.zip file
+```sh
+$ unzip vFix.zip
+```
 - Change into the extracted directory in Terminal.
-
-- Run make command as root:
-
-        sudo make
+```sh
+$ cd vFix-master
+```
+- Run "make" command as root:
+```sh
+$ sudo make
+```
 
 ##Usage
 
 ###vFix to Mounted Directory
-
-	vfix /media/[your_mounted_drive]
+```sh
+vfix /media/your_mounted_drive
+```
 
 ###vFix to current Directory
-
-	cd /media/[your_mounted_drive]
-	vfix
+```sh
+cd /media/your_mounted_drive
+vfix
+```
 
 ##Troubleshooting
 
@@ -42,12 +53,13 @@ Problem is you are using vfix on neither NTFS nor FAT32 File System.
 - Change into vFix directory in Terminal.
 
 - Run following command:
-
-        sudo make uninstall
+```sh
+sudo make uninstall
+```
 
 ##Review in Burmese
 
-- [vFix - Fix Virus Infected Flash Drives](http://naingyeminn.com/)
+- [vFix - Fix Virus Infected Flash Drives](http://naingyeminn.com/posts/2014/06/23/vfix-fix-virus-infected-flash-drives/)
 
 ##License
 
