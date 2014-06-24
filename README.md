@@ -24,13 +24,12 @@ Autorun.inf and RECYCLER created by Windows Viruses.
 
 ###vFix to Mounted Directory
 
-- vfix /media/[your_mounted_drive]
+		vfix /media/[your_mounted_drive]
 
 ###vFix to current Directory
 
-- cd /media/[your_mounted_drive]
-
-- vfix
+		cd /media/[your_mounted_drive]
+		vfix
 
 ##Troubleshooting
 
